@@ -11,7 +11,7 @@ class FILOStack:
         self.stack = []
 
     def push(self, item: Any) -> None:
-        print(f'{item} успешно добавлено в стек')
+        print(f'| {item} успешно добавлено в стек |')
         self.stack.append(item)
 
     def remove(self) -> Any:
@@ -40,7 +40,7 @@ class FIFOQueue:
         self.queue = []
 
     def push(self, item: Any) -> None:
-        print(f'{item} успешно добавлен в очередь')
+        print(f'| {item} успешно добавлен в очередь |')
         self.queue.append(item)
 
     def remove(self) -> Any:
@@ -67,9 +67,11 @@ if __name__ == '__main__':
     print('\n' + '-' * 40)
     print('Проверка стека\n')
     print('Проверка что стек пуст:', stack.is_empty)
+    print('\n+-------------------------------------+')
     stack.push('Значение 1')
     stack.push('Значение 2')
     stack.push('Значение 3')
+    print('|                                     |\n')
     print('Размер стека:', stack.size)
     print('Последний элемент в стеке:', stack.peek)
     stack.remove()
@@ -83,9 +85,11 @@ if __name__ == '__main__':
     print('\n' + '-' * 40)
     print('Проверка очереди\n')
     print('Проверка что очередь пуста:', queue.is_empty)
+    print('\n|                                      |')
     queue.push('Элемент 1')
     queue.push('Элемент 2')
     queue.push('Элемент 3')
+    print('|                                      |\n')
     print('Размер очереди:', queue.size)
     print('Первый элемент в очереди:', queue.peek)
     queue.remove()
