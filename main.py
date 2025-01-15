@@ -62,7 +62,7 @@ class FIFOQueue:
 
 if __name__ == '__main__':
     # Проверка стека
-    stack = FILOStack()
+    stack = LIFOStack()
 
     print('\n' + '-' * 40)
     print('Проверка стека\n')
