@@ -8,7 +8,7 @@ class LIFOStack:
     """
 
     def __init__(self) -> None:
-        self.stack = []
+        self.stack: list[Any] = []
 
     def push(self, item: Any) -> None:
         print(f'| {item} успешно добавлено в стек |')
@@ -37,7 +37,7 @@ class FIFOQueue:
 
     """
     def __init__(self) -> None:
-        self.queue = []
+        self.queue: list[Any] = []
 
     def push(self, item: Any) -> None:
         print(f'| {item} успешно добавлен в очередь |')
